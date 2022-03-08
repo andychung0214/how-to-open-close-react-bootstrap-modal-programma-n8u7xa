@@ -14,26 +14,30 @@ export default function UsingHook() {
     <div>
       <table>
         <thead>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
         </thead>
         <tbody>
-          <td>content1</td>
-          <td>content2</td>
-          <td>content3</td>
-          <td>
-            <Button
-              className="btn btn-success"
-              onClick={() => {
-                setDetailIndex(78);
-                clickShow(78);
-              }}
-            >
-              Show modal
-            </Button>
-          </td>
+          <tr>
+            <td>content1</td>
+            <td>content2</td>
+            <td>content3</td>
+            <td>
+              <Button
+                className="btn btn-success"
+                onClick={() => {
+                  setDetailIndex(78);
+                  clickShow(78);
+                }}
+              >
+                Show modal
+              </Button>
+            </td>
+          </tr>
         </tbody>
       </table>
       <Modal
